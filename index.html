@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML/CSS</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HTML/CSS복습</h1>
+    </header>
+    <main>
+        <section id ="">
+
+        </section>
+        <section id ="listTest">
+            <h2>리스트만들기</h2>
+                <h3>셀 수 있는 리스트</h3>
+                    <p>좋아하는 영화</p>
+                        <ol class="listType1">
+                            <li>베놈</li>
+                            <li>극한직업</li>
+                            <li>하울의 움직이는 성</li>
+                        </ol>
+                    <p>좋아하는 음식</p>    
+                        <ol type="I" class="listType2">
+                            <li>빵</li>
+                            <li>딸기쿠키스무디</li>
+                            <li>김밥</li>
+                        </ol>
+                <h3>셀 수 없는 리스트</h3>
+                    <ul tpye="cheak" class="listType3">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <ul class="listType4">
+                        <li>Nodejs</li>
+                        <li>Java</li>
+                    </ul>
+            <h2>설명목록 및 이미지 첨부하기</h2>
+                    <dl>
+                        <img src="assets/imges/ratatouille-5316205_640.jpg " alt="라따뚜이사진" width="300px">
+                        <dt>Ratatouille</dt>
+                        <dd>프랑스 요리의 일종으로 여러 가지 채소를 큼직하게 썰어넣어 익힌 남부 전통 채소 가정 요리이다.</dd>
+                    </dl>
+                
+        </section>
+        <section id="videoAudiosTest">
+            <h2>비디오/오디오 첨부</h2>
+                <ul>
+                    <li>
+                        <dl>비디오</dl>
+                        <dd>비디오실행-고양이<br>
+                            <video src="assets/videos/Cat - 22835.mp4" controls width="50%" autoplay muted></video><br>
+                            <p>
+                                자동재생-autoplay muted<br>
+                                반복재생-autoplay loop
+                            </p>
+                        </dd>
+                    </li>
+                    <li>
+                        <dl>오디오</dl>
+                        <dd>오디오실행-크리스마스<br>
+                            <audio src="assets/audios/christmas-2-4484.mp3" controls autoplay loop></audio>
+                        </dd>
+                    </li>
+                </ul>
+        </section>
+        <section id="rinkTest">
+            <h2>링크삽입하기</h2>
+            <h3>링크 클릭시 한페이지에서 이동</h3>
+            <a href="https://www.youtube.com/watch?v=qlcgPoI6h48&list=RDqlcgPoI6h48&start_radio=1">AJR - Come Hang Out</a>
+            <h3>링크 클릭시 새창 열기</h3>
+            <a href="https://www.youtube.com/watch?v=qlcgPoI6h48&list=RDqlcgPoI6h48&start_radio=1" target="_blank">AJR - Come Hang Out</a>
+        </section>
+        <section id="tableTest">
+            <h2>표 만들기</h2>
+                <table>
+                    <caption>시간표</caption>
+                        <thead>
+                            <th class="day"></th>
+                            <th class="day">월</th>
+                            <th class="day">화</th>
+                            <th class="day">수</th>
+                            <th class="day">목</th>
+                            <th class="day">금</th>
+                            <th class="day">토</th>
+                            <th class="day">일</th>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <th class="time">10:00</th>
+                                <td colspan="5" rowspan="2" class="work">근무</td> 
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <td colspan="2" rowspan="3" class="study">html/css 수강</td>
+                                <!-- <td></td>-->
+                            </tr>
+                            <tr>
+                                <th class="time">11:00</th>
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <!-- <td></td> <td></td> -->
+                            </tr>
+                            <tr>
+                                <th class="time">12:00</th>
+                                <td colspan="5" class="lunch">점심</td>
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <!-- <td></td> <td></td> -->
+                            </tr>
+                            <tr>
+                                <th class="time">13:00</th>
+                                <td colspan="5" rowspan="6" class="work">근무</td> 
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <td colspan="2" class="lunch">점심</td>
+                                <!-- <td></td>-->
+                            </tr>
+                            <tr>
+                                <th class="time">14:00</th>
+                                 <!-- <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <td colspan="2" rowspan="3" class="study">html/css 수강</td>
+                                <!-- <td></td>-->
+                            </tr>
+                            <tr>
+                                <th class="time">15:00</th>
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <!-- <td></td> <td></td> -->
+                            </tr>
+                            <tr>
+                                <th class="time">16:00</th>
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <!-- <td></td> <td></td> -->
+                            </tr>
+                            <tr>
+                                <th class="time">17:00</th>
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <td colspan="2" rowspan="3" class="dinner">저녁</td>
+                                <!-- <td></td> -->
+                            </tr>
+                            <tr>
+                                <th class="time">18:00</th>
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <!-- <td></td> <td></td> -->
+                            </tr>
+                            <tr>
+                                <th class="time">19:00</th>
+                                <td colspan="5" class="dinner">저녁</td>
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <!-- <td></td> <td></td> -->
+                            </tr>
+                            <tr>
+                                <th class="time">20:00</th>
+                                <td rowspan="2" class="study">java 수강</td> 
+                                <td rowspan="2" class="study">복습</td> 
+                                <td rowspan="2" class="study">java 수강</td> 
+                                <td rowspan="2" class="study">복습</td> 
+                                <td rowspan="2" class="study">java 수강</td>
+                                <td colspan="2" rowspan="2" class="study">html/css 복습</td> 
+                                <!-- <td></td> -->
+                            </tr>
+                            <tr>
+                                <th class="time">21:00</th>
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <!-- <td></td> <td></td> -->
+                            </tr>
+                            <tr>
+                                <th class="time">22:00</th>
+                                <td colspan="7"></td> 
+                                <!-- <td></td> <td></td> <td></td> <td></td> <td></td> -->
+                                <!-- <td></td> <td></td> -->
+                            </tr>        
+                        </tbody>
+
+                </table>
+
+
+
+
+        </section>
+        <section id="formTest">
+
+        </section>
+
+    </main>
+    <aside>
+
+    </aside>
+    <footer></footer>
+</body>
+</html>
