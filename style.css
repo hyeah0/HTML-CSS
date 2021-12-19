@@ -1,3 +1,69 @@
+/* 어사이드 */
+
+#wrap {
+  width: 100%;
+  height: 100%;
+}
+
+aside {
+  background-color: rgba(128, 128, 128, 0.233);
+  float: left;
+  width: 15%;
+  height: 10000px;
+}
+
+main {
+  float: left;
+  width: 75%;
+  margin-left: 15px;
+}
+
+footer {
+  clear: left;
+}
+
+/*---------------------------------------*/
+
+/* 해더 */
+
+header {
+  width: 100%;
+  height: 100%;
+}
+h1 {
+  /* width: 1000px;
+  margin: auto; */
+  text-align: center;
+  background-color: rgba(222, 184, 135, 0.377);
+}
+.hc {
+  display: inline-block;
+}
+.ha {
+  width: 100px;
+  padding: 15px;
+  background-color: rgb(158, 132, 98);
+  border: 1px solid gray;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-decoration: none;
+}
+.ha:hover {
+  background-color: pink;
+}
+/* ㄴ 커서를 두었을때 변경 */
+.ha:focus {
+  background-color: rgb(172, 48, 48);
+}
+/* ㄴ 탭 했을때 변경 */
+.ha:active {
+  background-color: skyblue;
+}
+/* ㄴ 클릭한 상태일때 변경 */
+
+/*---------------------------------------*/
+
+/* 리스트 */
 .listType1 {
   border: 1px solid black;
 }
@@ -11,6 +77,9 @@
   list-style: none;
 }
 
+/*---------------------------------------*/
+
+/* 테이블 */
 table {
   border: 1px solid gray;
   text-align: center;
@@ -42,3 +111,72 @@ td {
   background-color: rgb(187, 175, 187);
   color: rgb(53, 0, 53);
 }
+
+/*---------------------------------------*/
+
+/* 폼 */
+.form1 {
+  height: 350px;
+  width: 600px;
+  padding: 2px;
+}
+.form1 label {
+  display: inline-block;
+  width: 200px;
+  padding: 2px;
+  margin: 2px;
+  text-align: center;
+}
+.formb {
+  text-align: center;
+}
+.form1 button {
+  background-color: rgba(44, 202, 44, 0.212);
+}
+
+.form2 label {
+  display: inline-block;
+  width: 100px;
+  padding: 5px 2px;
+}
+
+.form2 button {
+  margin-top: 15px;
+}
+
+/* 패턴 */
+
+#patten1 {
+  background-image: url("assets/imges/squid-game-6764431_640.png");
+  background-repeat: repeat-x;
+  width: 1000px;
+  height: 300px;
+  background-color: rgba(22, 165, 110, 0.952);
+}
+
+#patten2 {
+  background-image: url("assets/imges/floral-background-6622475_640.png");
+  background-repeat: repeat;
+  background-size: 100px;
+  width: 800px;
+  height: 300px;
+  background-color: rgba(22, 165, 110, 0.952);
+}
+#patten2 > p {
+  transition: all 0.3s;
+}
+.patten2hover:hover {
+  background-color: rgb(114, 145, 114);
+  color: white;
+}
+#patten3 {
+  background-image: url("assets/imges/ChrismasTree.png");
+  background-repeat: no-repeat;
+  background-size: 300px;
+  width: 360px;
+  height: 480px;
+  margin-top: 10px;
+  border: 1px dashed gray;
+}
+
+/*---------------------------------------*/
