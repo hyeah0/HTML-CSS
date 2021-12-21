@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Float</title>
+    <link rel="stylesheet" href="cssFloat.css">
+</head>
+<body>
+    <div id="float">
+        <p>Float</p>
+        <p>
+            가로배치 요소<br>
+        </p>
+            <div id="floatTest1">
+                <div class="floatTest1">
+                    <p class="floatTest1_1">red</p>
+                    <p class="floatTest1_2">yellow</p>
+                    <p class="floatTest1_3">green</p>
+                </div>
+                <p class="floatTest1_4">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p>가로배치는 되지만 레이아웃 이상현상</p>
+            </div>
+            <div id="floatTest2">
+                <div class="floatTest2">
+                    <p class="floatTest2_1">red</p>
+                    <p class="floatTest2_2">yellow</p>
+                    <p class="floatTest2_3">green</p>
+                </div>
+                <p class="floatTest2_4">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p>
+                    레이아웃 이상 수정법 <br>
+                    1. 간편 : float가 실행된 자식의 부모요소에 overflow: hidden; 작성 
+                </p>
+            </div>
+            <div id="floatTest3">
+                <div class="floatTest3">
+                    <p class="floatTest3_1">red</p>
+                    <p class="floatTest3_2">yellow</p>
+                    <p class="floatTest3_3">green</p>
+                </div>
+                <p class="floatTest3_4">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+                <p>
+                    레이아웃 이상 수정법<br>
+                    2. Clear : float가 실행된 요소 다음 요소에 clear: left; 작성 <br>
+                    clear : left 또는 right 또는 both 사용 가능<br>
+                    clear는 display : block; 인 값에만 영향<br>
+                    float : left 작성된 것을 영향을 받지 않음
+                </p>
+            </div>
+            <div id="floatTest4">
+                <p>
+                    <b>float 실행된 다음 요소가 없다면 ?</b><br>
+                    css상에 가상 요소를 추가한다.<br>
+                    가상요소 추가법<br>
+                    <ol>
+                        <li>
+                            float가 작성된 부모 클래스 또는 아이디를 작성후 :: before 또는 after기재<br>
+                            ex) .floatTest4::before{<br>
+                            }
+                        </li>
+                    </ol>
+                </p>   
+                <div class="floatTest4">
+                    <p class="floatTest4_1">red</p>
+                    <p class="floatTest4_2">yellow</p>
+                    <p class="floatTest4_3">green</p>
+                </div>
+                <p class="floatTest4_4">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </div>
+    </div>
+</body>
+</html>

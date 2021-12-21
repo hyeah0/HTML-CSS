@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+
+.floatTest1_1 {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  /* width: 100px; */
+  /* height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest1_2 {
+  background-color: yellow;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+  height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest1_3 {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+  height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest1_4 {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+    height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+}
+
+.floatTest2 {
+  overflow: hidden;
+}
+
+.floatTest2_1 {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  /* width: 100px; */
+  /* height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest2_2 {
+  background-color: yellow;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+    height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest2_3 {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+    height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest2_4 {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+      height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+}
+
+.floatTest3_1 {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  /* width: 100px; */
+  /* height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest3_2 {
+  background-color: yellow;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+      height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest3_3 {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+      height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest3_4 {
+  background-color: black;
+  color: white;
+  font-weight: bold;
+  clear: left;
+  /* width: 100px;
+        height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+}
+
+.floatTest4_1 {
+  background-color: red;
+  color: white;
+  font-weight: bold;
+  /* width: 100px; */
+  /* height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest4_2 {
+  background-color: yellow;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+        height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest4_3 {
+  background-color: green;
+  color: white;
+  font-weight: bold;
+  /* width: 100px;
+        height: 100px; */
+  text-align: center;
+  /* padding-top: 40px; */
+  float: left;
+}
+
+.floatTest4_4::before {
+  content: "★";
+}
+
+.floatTest4::after {
+  content: "";
+  display: block;
+  clear: left;
+}
