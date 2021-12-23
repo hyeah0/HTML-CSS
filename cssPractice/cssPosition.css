@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  /* margin-left: 10px; */
+  /* padding: 1px; */
+}
+.positiontype {
+  list-style: none;
+  /* margin: 0px;
+  padding: 0px; */
+  border-bottom: 1px solid #333;
+}
+.positiontype a {
+  text-decoration: none;
+  text-align: center;
+  padding-top: 10px;
+  margin-top: 10px;
+  margin-right: 10px;
+  width: 100px;
+  float: left;
+  border: 1px solid #333;
+  border-top-left-radius: 30%;
+  border-top-right-radius: 30%;
+  /* background-color: blue; */
+  transition: all 0.5s;
+}
+.positiontype::after {
+  content: "";
+  display: block;
+  clear: left;
+}
+.positiontype a:hover {
+  color: blue;
+  background-color: skyblue;
+}
+
+.floatbox {
+  background-color: black;
+}
+.box1 {
+  width: 50px;
+  height: 50px;
+  line-height: 20px;
+  margin: 0px;
+  padding: 0px;
+  background-color: pink;
+  float: left;
+}
+.box2 {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  background-color: yellow;
+  /* float: left; */
+}
+.box3 {
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  background-color: green;
+  /* clear: left; */
+}
+
+.Relativebox {
+  background-color: rgba(184, 184, 184, 0.062);
+}
+.box4 {
+  width: 50px;
+  height: 50px;
+  position: relative;
+  top: 20px;
+  left: 50px;
+  margin: 0px;
+  background-color: pink;
+}
+.box5 {
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  background-color: yellow;
+}
+.box6 {
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  background-color: green;
+}
+
+.Absolutebox {
+  background-color: rgba(184, 184, 184, 0.719);
+  position: relative;
+}
+
+.box7 {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  margin: 0px;
+  background-color: pink;
+}
+.box8 {
+  width: 100px;
+  height: 100px;
+  margin: 0px;
+  background-color: yellow;
+}
+.box9 {
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  background-color: green;
+}
+
+.Fixedbox {
+  background-color: rgba(184, 184, 184, 0.719);
+}
+.box10 {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  bottom: 20px;
+  right: 50px;
+  margin: 0px;
+  background-color: pink;
+}
+.box11 {
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  background-color: yellow;
+}
+.box12 {
+  width: 50px;
+  height: 50px;
+  margin: 0px;
+  background-color: green;
+}

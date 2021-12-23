@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cssPosition</title>
+    <link rel="stylesheet" href="cssPosition.css">
+</head>
+<body>
+    <head class="position">
+        <nav>
+            <ul class="positiontype">
+                <li>
+                    <a href="#positionStatic">static</a>
+                </li>
+                <li>
+                    <a href="#positionRelative">relative</a>
+                </li>
+                <li>
+                    <a href="#positionAbsolute">absolute</a>
+                </li>
+                <li>
+                    <a href="#positionFixed">fixed</a>
+                </li>
+                <li>
+                    <a href="#">sticky</a>
+                </li>
+            </ul>
+        </nav>
+    </head>
+    <main>
+        <div id="position1">
+            <p><strong>postion이란?</strong></p>
+            <p>원하는 위치에 요소를 이동시키기 위한 속성</p>
+            <p>어떤종류의 포지션 사용하고 있는지, 무엇을 기준으로 위치시키는지</p>
+        </div>
+        <br>
+        <div id="positionStatic">
+            <p><strong>Static이란?</strong></p>
+            <p>모든요소의 기본요소가 static</p>
+        </div>
+        <br>
+        <div id="positionRelative">
+            <p><strong>Relative이란?</strong></p>
+            <p>float와 같이 가로배치시 사용</p>
+            <pre>
+                <strong>css사용시</strong>
+                position: relative;
+                top: 20px;   --부모기준 위에서 20px 떨어짐
+                left: 50px;   --부모기준 왼쪽에서 20px 떨어짐
+            </pre>
+            <dl>
+                <dt>float와 다른점</dt>
+                <dd>float는 원래 있던 위치를 기억하지 않아 레이아웃이 변경됨</dd>
+                <dd>Relative는 원래 있던 위치를 기억하여 레이아웃이 변경되지 않음, 원하는 위치에 이동가능</dd>
+            </dl>
+            <div class="float">
+                <p>float예시</p>
+                <div class="floatbox">
+                    <p class="box1">pink</p>
+                    <p class="box2">yellow</p>
+                    <p class="box3">green</p>
+                </div>
+            </div>
+            <div class="Relative">
+                <p>Relative예시</p>
+                <div class="Relativebox">
+                    <p class="box4">pink</p>
+                    <p class="box5">yellow</p>
+                    <p class="box6">green</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="positionAbsolute">
+            <p><strong>absolute이란?</strong></p>
+            <p>display값이 block으로 변함</p>
+            <p>float와 같이 움직이기 전 위치를 기억하지 않아 다른 요소들과 겹침</p>
+            <p>기준점을 새로 정할 수 있다.=자신을 감싸고 있는 부모 외 다른 요소를 기준점으로 잡을 수있다. 다만 position이 static이아닌것</p>
+            <div class="Absolute">
+                <p>Absolute예시</p>
+                <div class="Absolutebox">
+                    <p class="box7">pink</p>
+                    <p class="box8">yellow</p>
+                    <p class="box9">green</p>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div id="positionFixed">
+            <p><strong>Fixed이란?</strong></p>
+            <p>기준점은 viewport사이즈기준(브라우저창)</p>
+            <div class="Fixed">
+                <p>Fixed예시</p>
+                <div class="Fixedbox">
+                    <p class="box10">pink</p>
+                    <p class="box11">yellow</p>
+                    <p class="box12">green</p>
+                </div>
+            </div>
+        </div>
+    </main>   
+</body>
+</html>
