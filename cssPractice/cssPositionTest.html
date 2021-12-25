@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>cssPositionTest</title>
     <link rel="stylesheet" href="cssPositionTest.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
 </head>
 <body>
     <div id=userCard>
@@ -32,7 +35,8 @@
         <br>
         <hr>
         <br>
-    <div>
+    <div id=travelCardTest>
+    <p>강의수강전-예시이미지 확인후 코드작성</p>
         <div id=travelCard>
             <div class=travelCardImg>
                 <img src="asstesCss/monet-gardens-1279053_640.jpg" alt="지베르니-모네의정원" width="400px" height="240px">
@@ -41,7 +45,7 @@
             </div>
             <div class=travelCardInfo>
                 <div class=travelCardLocation>
-                    <strong>프랑스-지베르니(모네의정원)</strong>
+                    <strong>프랑스(지베르니)-모네의정원 입장권</strong>
                     <p>트래블러</p>
                 </div>
                 <div class=travelCardPrice>
@@ -50,8 +54,67 @@
                 </div>
             </div>
         </div>
+        <br>
+    <p>강의수강후</p>
+        <div id=travelCard1>
+            <div class=travelCardImg1>
+                <img src="asstesCss/monet-gardens-1279053_640.jpg" alt="지베르니-모네의정원" >
+                <button type="button" aria-label="이전" id="prev"></button>
+                <button type="button" aria-label="다음" id="next"></button>
+            </div>
+            <div class=cardContent>
+                <h2>프랑스(지베르니)-모네의정원 입장권</h2>
+                <span>
+                    트래블러
+                </span>
+                <strong>
+                    <span>
+                        1인
+                    </span>
+                    100,000원
+                </strong>
+            </div>
+        </div>
+    <p>코드 간결화 필요</p>
     </div>
-
-    
+        <br>
+        <hr>
+        <br>
+    <div id=modal>
+    <p>강의수강전-예시이미지 확인후 코드작성</p>
+        <div class=modal1>
+        <h1>
+            Manage Subscriptions
+        </h1>
+        <p>
+            You can follow the discussion on @____ without to leave a comment.<br>
+            Just enter your email address in the form here below and you are all set.
+        </p>
+        <form>
+            <fieldset>
+                <input type="email" placeholder="Your e-mail">
+                <button type="submit">Subscribe</button>
+            </fieldset>
+        </form>
+        </div>
+        <br>
+    <p>강의수강후</p>
+        <div class=modal2>
+            <h1>
+                Manage Subscriptions
+            </h1>
+            <p>
+                You can follow the discussion on @____ without to leave a comment.<br>
+                Just enter your email address in the form here below and you are all set.
+            </p>
+            <div class="inputGroup">
+                <input type="email" placeholder="Your e-mail">
+                <button type="submit">Subscribe</button>
+            </div>
+            <button type="button" class="close-button" aria-label="close the modal"></button>
+        </div>
+    </div>
+    <br>
+    <br>
 </body>
 </html>

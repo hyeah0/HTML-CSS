@@ -3,6 +3,10 @@
   margin: 0px;
   padding: 0px;
 }
+body {
+  font-family: "Jua", sans-serif;
+  /* font-family: "Nanum Pen Script", cursive; */
+}
 #userCard {
   margin: 8px;
 }
@@ -39,7 +43,6 @@
   font-size: 30px;
   /* margin: 10px; */
 }
-
 .userStatus {
   position: absolute;
   top: 50px;
@@ -56,7 +59,7 @@
 /* -------------------------------------------------------- */
 
 #travelCard {
-  margin: 7px;
+  margin: auto;
   border: 1px solid gray;
   width: 402px;
   height: 350px;
@@ -79,10 +82,13 @@
 .travelForward {
   position: absolute;
   top: 100px;
-  right: 1px;
+  right: 4px;
   font-weight: bold;
   font-size: 40px;
   color: white;
+}
+.travelCardLocation {
+  margin-left: 5px;
 }
 .travelCardLocation strong {
   font-size: 20px;
@@ -95,7 +101,6 @@
 .travelCardLocation p {
   color: gray;
 }
-
 /* .travelCardPrice p {
   display: inline-block;
   position: absolute;
@@ -113,4 +118,137 @@
   font-size: 25px;
   font-weight: bold;
   color: blue;
+}
+
+/* -------------------------------------------------------- */
+
+#travelCard1 {
+  position: relative;
+  margin: auto;
+  width: 400px;
+}
+.travelCardImg1 img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.travelCardImg1 button {
+  display: block;
+  width: 28px;
+  height: 28px;
+  border: none;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: transparent;
+}
+#prev,
+#next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+#prev {
+  background-image: url(./asstesCss/pre.png);
+  left: 0;
+}
+#next {
+  background-image: url(./asstesCss/next.png);
+  right: 0;
+}
+.cardContent {
+  padding: 12px 16px;
+}
+.cardContent span {
+  color: gray;
+}
+.cardContent strong {
+  display: block;
+  text-align: right;
+  color: blue;
+  font-size: 28px;
+}
+.cardContent strong span {
+  color: gray;
+  font-size: 15px;
+}
+
+/* -------------------------------------------------------- */
+
+.modal1 {
+  width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.modal1 p {
+  margin-bottom: 20px;
+}
+.modal1 fieldset {
+  border: none;
+}
+.modal1 input {
+  padding: 10px;
+  border: none;
+  background-color: rgba(99, 99, 99, 0.459);
+}
+.modal1 button {
+  padding: 10px;
+  background-color: blue;
+  color: white;
+  border: none;
+}
+
+/* -------------------------------------------------------- */
+
+.modal2 {
+  width: 700px;
+  height: auto;
+  margin: auto;
+  border: 1px solid gray;
+  padding: 30px;
+  text-align: center;
+  position: relative;
+  /* position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  border-radius: 4px;
+  background-color: #fff;
+}
+.modal2 h1 {
+  margin: 4px;
+}
+
+.modal2 p {
+  margin-bottom: 30px;
+}
+.close-button {
+  background-image: url(./asstesCss/closeIcon.png);
+  width: 20px;
+  height: 20px;
+  background-size: contain;
+  background-color: transparent;
+  border: none;
+}
+.inputGroup input {
+  width: 250px;
+  padding: 10px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 4px;
+  background-color: rgba(175, 175, 175, 0.377);
+}
+.inputGroup button {
+  padding: 10px;
+  width: 100px;
+  border: none;
+  border-radius: 4px;
+  background-color: blue;
+  color: white;
+}
+
+.close-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
 }
