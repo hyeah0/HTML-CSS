@@ -40,7 +40,7 @@
 }
 .BoxInlineBlockTest span {
   display: inline-block;
-  background-color: blue;
+  background-color: rgb(98, 98, 161);
   padding-left: 30px;
   padding-right: 50px;
   padding-top: 10px;
