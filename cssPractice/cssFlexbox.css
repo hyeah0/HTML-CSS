@@ -2,19 +2,74 @@
   box-sizing: border-box;
 }
 
-.parent {
+.parent1 {
   width: 500px;
   margin: 0 auto;
   background-color: gray;
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.parent2 {
+  width: 100px;
+  height: 160px;
+  margin: 0 auto;
+  background-color: gray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+}
+
+.parent3 {
+  width: 500px;
+  margin: 0 auto;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+}
+
+.parent4 {
+  width: 500px;
+  margin: 0 auto;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: nowrap;
+}
+
+.parent5 {
+  width: 100px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.parent6 {
+  width: 100px;
+  height: 300px;
+  margin: 0 auto;
+  background-color: gray;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
   flex-wrap: wrap;
 }
 
 .child {
-  width: 300px;
-  height: 200px;
-  line-height: 200px;
+  width: 50px;
+  height: 50px;
+  line-height: 20px;
   text-align: center;
   color: white;
   font-weight: 600;
@@ -32,22 +87,6 @@
   background-color: green;
 }
 
-.parent1 {
-  width: 1000px;
-  margin: 0 auto;
-  background-color: gray;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: nowrap;
-}
-
-.pink {
-  background-color: pink;
-}
-.yellow {
+b {
   background-color: yellow;
-}
-.purple {
-  background-color: purple;
 }
