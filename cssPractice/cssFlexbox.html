@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+    <link rel="stylesheet" href="cssFlexbox.css">
+</head>
+<body>
+    <div id = "Flexbox">
+        <h1>Flexbox</h1>
+        <code>
+            <pre>
+            .flexbox{
+                display: flex;
+                flex-direction: row;
+                flex-wrap : nowrap;
+            }
+            </pre>
+        </code>
+        <ol>
+            <li> display : flex; 부모요소에 기재</li>
+            <li>
+                <p>
+                    flex-direction: row;  -> 가로방향 <br>
+                    flex-direction: column; -> 세로방향
+                </p>
+                <p>
+                main axis => 메인이 되는 축 <br>
+                flex-direction: row; 일때는 x축(왼쪽에서 오른쪽으로) <br>
+                flex-direction: column; 일때는 y축(위에서 아래쪽으로) <br>
+                <strong>
+                    justify-content: center (가운데 정렬)
+                    justify-content: flex-end (오른쪽 정렬)
+                    justify-content: center 
+                </strong> 가운데 정렬
+                </p>
+                cross axis => 메인이 되는축에 90도 지나는 선<br>
+                <strong>align-items align-content</strong>
+            </li>
+            <li>
+                flex-wrap : nowrap -> 한줄정렬(자식의 크기를 줄여서라도 한줄정렬) <br>
+                flex-wrap : wrap -> 묶어서 정렬
+            </li>
+        </ol>
+    </div>
+    <div class=FlexboxEx>
+        <div class=parent>
+            <div class="child red">red</div>
+            <div class="child orange">orange</div>
+            <div class="child green">green</div>
+        </div>
+        <div class=parent1>
+            <div class="child pink">pink</div>
+            <div class="child yellow">yellow</div>
+            <div class="child purple">purple</div>
+        </div>
+    </div>
+   
+    <p>
+        
+    </p>
+
+    
+    
+</body>
+</html>
