@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="kor">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mediaQuery</title>
+    <link rel="stylesheet" href="mediaQuery.css">
+</head>
+<body>
+    <h2>mediaQuery</h2>
+    <p>반응형 웹</p>
+    <dt>필요</dt>
+    <dd>html : viewport meta</dd>
+    <dd>css : media query</dd>
+    <h2>html</h2>
+    <code>
+        <pre>
+            &lt;head&gt;
+            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+            &lt;/head&gt;
+        </pre>
+    </code>
+    <h2>css</h2>
+    <code>
+        <pre>
+            @media screen and (min-width: 700px){
+                스타일
+            }
+            ㄴ 700px 이상에서는 { } 안의 스타일 
+        </pre>
+    </code>
+    <div id="exemple">
+        <h3>예제</h3>
+        <div class="box"></div>
+        <p>css문</p>
+        <code>
+            <pre>
+                .box::after {
+                    content: "media";
+                  }
+                  
+                <b>@media screen and (min-width: 576px)</b>{
+                    .box {
+                      background-color: rgb(159, 211, 189);
+                    }
+                    .box::after {
+                      content: "phone";
+                    }
+                  }
+                  
+                <b>@media screen and (min-width: 768px)</b>{
+                    .box {
+                      background-color: rgb(159, 162, 211);
+                    }
+                    .box::after {
+                      content: "Tablet";
+                    }
+                  }
+                  
+                <b>@media screen and (min-width: 768px) and (max-width: 991px)</b>{
+                    .box {
+                      background-color: rgb(209, 161, 171);
+                    }
+                    .box::after {
+                      content: "max-width";
+                    }
+                  }
+                  
+                <b>@media screen and (min-width: 992px)</b>{
+                    .box {
+                      background-color: rgb(186, 159, 211);
+                    }
+                    .box::after {
+                      content: "Desktop";
+                    }
+                  }
+                  
+                <b>@media screen and (min-width: 1200px)</b>{
+                    .box {
+                      background-color: rgb(207, 159, 211);
+                    }
+                    .box::after {
+                      content: "Large Desktop";
+                    }
+                  }
+            </pre>
+        </code>
+    </div>
+</html>
