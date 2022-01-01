@@ -1,0 +1,33 @@
+.fontweightThin {
+  font-weight: 100;
+}
+
+.fontweightlight {
+  font-weight: 300;
+}
+
+.fontweightregular {
+  font-weight: 400;
+}
+
+.fontweightmedium {
+  font-weight: 500;
+}
+
+.fontweightblod {
+  font-weight: 700;
+}
+
+.fontweightblack {
+  font-weight: 900;
+}
+
+.hex {
+  color: #ff9900;
+}
+.rgb {
+  color: rgb(108, 108, 199);
+}
+.rgba {
+  color: rgba(124, 45, 134, 0.411);
+}
