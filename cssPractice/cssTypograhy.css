@@ -1,3 +1,7 @@
+li {
+  padding-bottom: 10px;
+}
+
 .fontweightThin {
   font-weight: 100;
 }
@@ -22,6 +26,14 @@
   font-weight: 900;
 }
 
+.fontstyleItalic {
+  font-style: italic;
+}
+
+.fontstyleOblique {
+  font-style: oblique;
+}
+
 .hex {
   color: #ff9900;
 }
@@ -30,4 +42,23 @@
 }
 .rgba {
   color: rgba(124, 45, 134, 0.411);
+}
+
+.textdecoUnderline {
+  text-decoration: underline;
+  padding: 10px 0px;
+}
+
+.textdecoLine-through {
+  text-decoration: line-through;
+  padding: 10px 0px;
+}
+
+.textdecoOverline {
+  text-decoration: overline;
+  padding: 10px 0px;
+}
+
+.webfontGoogle {
+  font-family: "Jua", sans-serif;
 }

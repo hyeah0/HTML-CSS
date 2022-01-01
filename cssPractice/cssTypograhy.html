@@ -6,7 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Typograhy</title>
     <link rel="stylesheet" href="cssTypograhy.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    </head>
 <body>
     <div class="Typograhy">
         <h2>Typograhy = 텍스트 디자인</h2>
@@ -39,10 +42,17 @@
                     </code>
                 </dd>
             </li>
+            <!-- font-style -->
+            <li>
+                <dt>font-style</dt>
+                <dd>normal</dd>
+                <dd class="fontstyleItalic">italic : 기울림체</dd>
+                <dd class="fontstyleOblique">oblique : 기울림체</dd>
+                <dd>html 태그중 <em>em 은 자동 기울림체</em></dd>
+            </li>
             <!-- color -->
             <li>
                 <dt>color : 글씨 색상</dt>
-                <dd>사용가능 단위</dd>
                 <dd>
                     hex
                     <code>
@@ -91,10 +101,51 @@
                 </dd>
                 <dd>rem : html에 적용된 폰트사이즈를 1rem</dd>
             </li>
+            <!-- ------------ -->
+            <hr>
+            <!-- ------------ -->
+            <!-- text-align -->
+            <li>
+                <dt>text-align : 정렬</dt>
+            </li>
+            <!-- text-indent :들여쓰기-->
+            <li>
+                <dt>text-indent : 들여쓰기 (px)</dt>
+            </li>
+            <!-- text-transform : 대소문자 변경-->
+            <li>
+                <dt>text-transform : 대문자,소문자변경</dt>
+                <dd>none</dd>
+                <dd>capitalize : 단어 앞자리 대문자변경</dd>
+                <dd>uppercase : 전체 대문자로 변경</dd>
+                <dd>lowercase : 전체 소문자로 변경</dd>
+            </li>
+            <!-- text-decoration : 밑줄, 삭선-->
+            <li>
+                <dt>text-decoration</dt>
+                <dd>none</dd>
+                <dd class="textdecoUnderline">underline : 밑줄</dd>
+                <dd class="textdecoLine-through">line-through : 삭선</dd>
+                <dd class="textdecoOverline">overline : 윗선</dd>
+            </li>  
         </ul>
     </div>
-    <div class="TypograhyTest">
-
+    <hr>
+    <div class="Webfont">
+        <h2>Webfont</h2>
+        <p>사용자의 컴퓨터에 서체가 없다면 기본서체로 적용</p>
+        <ol>
+            <li class="webfontGoogle">
+                폰트를 갖다쓴다
+                <ol>
+                    <li>html 링크연결</li>
+                    <li>css font-family: "Jua", sans-serif;</li>
+                </ol>
+            </li>
+            <li>
+                폰트를 제공한다
+            </li>
+        </ol>
     </div>
 </body>
 </html>
