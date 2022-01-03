@@ -1,56 +1,143 @@
-.background-color {
-  background-color: blue;
+* {
+  box-sizing: border-box;
+  margin: 0px;
 }
-.background-image {
-  background-image: url(https://images.unsplash.com/photo-1641171611229-cc7e6ceec968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
-
-  background-repeat: no-repeat;
-}
-
-.background li {
-  margin-bottom: 10px;
+.backgroundPractice {
+  margin: 10px;
+  display: flex;
 }
 
-.background-size li {
-  margin-bottom: 10px;
-}
+.backgroundImg {
+  background-image: url(./asstesCss/cssBackgroundTestRoom.jpg);
 
-.backgroundsizeContain {
-  background-image: url(https://images.unsplash.com/photo-1641171611229-cc7e6ceec968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
-  background-repeat: no-repeat;
-  background-size: contain;
-  width: 500px;
-  height: 200px;
-}
-
-.backgroundsizeCover {
-  background-image: url(https://images.unsplash.com/photo-1641171611229-cc7e6ceec968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
-  background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   width: 300px;
-  height: 300px;
+  height: 200px;
+  border: 1px solid #0ea500;
+  border-radius: 10px;
+
+  margin-right: 20px;
+
+  position: relative;
 }
 
-.backgroundsizeCustom {
-  background-image: url(https://images.unsplash.com/photo-1641171611229-cc7e6ceec968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
-  background-repeat: no-repeat;
-  background-size: 200px 10px;
+.backgroundImg button {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  border: none;
+
+  background-image: url(./asstesCss/cssBackgroundTestOff.png);
+  background-color: white;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
 }
 
-.background-position {
-  background-image: url(https://images.unsplash.com/photo-1641171611229-cc7e6ceec968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: 50% 50%;
-  /* background-position: center center; */
-  width: 600px;
-  height: 600px;
-  border: 1px solid black;
+.backgroundImg button:active {
+  background-image: url(./asstesCss/cssBackgroundTestOn.png);
 }
 
-.background-position pre {
-  background-color: rgba(0, 0, 0, 0.521);
+.roomcondition {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.roomtype::before {
+  content: "plus";
+  background-color: rgb(134, 2, 2);
+  border-radius: 5px;
   color: white;
-  width: 1500px;
+  font-weight: bold;
+  padding: 0px 6px;
+  margin-right: 5px;
+}
+
+.roomrate::before {
+  content: "★";
+  color: rgb(134, 2, 2);
+  font-weight: bold;
+  margin-right: 5px;
+}
+
+.roomrate::after {
+  content: "(203)";
+  color: rgb(126, 126, 126);
+}
+
+.container h2 {
+  margin-bottom: 10px;
+}
+
+.roomdetail {
+  color: rgb(126, 126, 126);
+  line-height: 25px;
+}
+
+.card {
+  font-family: "Poppins", sans-serif;
+  /* display: flex; */
+}
+
+.card-image {
+  background-image: url(./asstesCss/cssBackgroundTestRoom.jpg);
+  border-radius: 5px;
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  width: 300px;
+  height: 200px;
+}
+
+.plus-badge {
+  display: inline-block;
+  background-color: rgb(116, 14, 14);
+  border-radius: 5px;
+  color: white;
+  font-size: 14px;
+  padding: 1px 8px;
+  margin: 2px;
+  text-transform: uppercase;
+}
+
+.property-type span {
+  font-size: 16px;
+  color: rgb(90, 90, 90);
+}
+
+.property-rate span {
+  font-size: 16px;
+  color: rgb(90, 90, 90);
+}
+
+.property-rate::before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: 1px;
+  width: 16px;
+  height: 16px;
+  background-image: url("./asstesCss/iconXmas.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+}
+
+.card-header {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.card-title {
+  font-size: 20px;
+  /* font-weight: 400; */
+  margin-bottom: 16px;
 }
