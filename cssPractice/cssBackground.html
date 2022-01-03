@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background</title>
+    <link rel="stylesheet" href="cssBackground.css">
+</head>
+<body>
+    <h1>background</h1>
+    <ul class="background">
+        <li class="background-color">
+            background-color
+        </li>
+        <li class="background-image">
+            background-image
+        </li>
+        <li class="background-repeat">
+            background-repeat : repeat 또는 no-repeat;
+        </li>
+        <li class="background-size">
+            background-size : contain 또는 cover 또는 custom;
+            <ul>
+                <li class="backgroundsizeContain">
+                    contain : 정해진 크기 요소안에 전체이미지
+                <code>
+                    <pre>.backgroundsizeContain {
+                        background-image: url(https://images.unsplash.com/photo-1641171611229-cc7e6ceec968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
+                        background-repeat: no-repeat;
+                        background-size: contain;
+                        width: 500px;
+                        height: 200px;
+                      }</pre>
+                </code>
+                </li>
+                <li class="backgroundsizeCover">
+                    cover
+                    <code>
+                        <pre>.backgroundsizeCover {
+                            background-image: url(https://images.unsplash.com/photo-1641171611229-cc7e6ceec968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
+                            background-repeat: no-repeat;
+                            background-size: cover;
+                            background-position: center center;
+                            width: 300px;
+                            height: 300px;
+                          }
+                        </pre>
+                    </code>
+                </li>
+                <li class="backgroundsizeCustom">
+                    custom
+                    <code>
+                        <pre>.backgroundsizeCustom {
+                            background-image: url(https://images.unsplash.com/photo-1641171611229-cc7e6ceec968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
+                            background-repeat: no-repeat;
+                            background-size: 200px 10px;
+                          }
+                        </pre>
+                    </code>
+                </li>
+            </ul>
+        </li>
+        <li class="background-position">
+            background-position :
+            <code>
+                <pre>.background-position {
+                    background-image: url(https://images.unsplash.com/photo-1641171611229-cc7e6ceec968?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHw3fHx8ZW58MHx8fHw%3D&auto=format&fit=crop&w=900&q=60);
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    background-position: 50% 50%;
+                    /* background-position: center center; */
+                    width: 600px;
+                    height: 600px;
+                    border: 1px solid black;
+                  }
+                </pre>
+            </code>
+        </li>
+    </ul>
+</body>
+</html>
