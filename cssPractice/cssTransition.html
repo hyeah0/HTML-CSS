@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transition/ animation</title>
+    <link rel="stylesheet" href="cssTransition.css">
+</head>
+<body>
+    <div class="movement">
+        <div class="TransitionBox">
+            <div class="Transition">
+                <h2>Transition</h2>
+                <p>효과를 줄 때 : 속성의 값이 변화할때(예시 : 클릭을 할때)</p>
+                <ul>
+                    <li>
+                        property
+                    </li>
+                    <li>
+                        duration : 지속시간(단위 : 1000ms= 1s)/ 변경시간
+                    </li>
+                    <li>
+                        timing-funcion : 변화 속도 (생략가능)
+                        <ul>
+                            <li>
+                                ease-in : 천천히 변경되다가 나중에 빨리 변경 
+                            </li>
+                            <li>ease-out : 빨리 변경되다가 나중에 천천히 변경 </li>
+                            <li>ease-in-out</li>
+                            <li>cubic-bezier</li>
+                        </ul>
+
+                    </li>
+                    <li>
+                        delay
+                    </li> 
+                </ul>
+            </div>
+            <div class="TransitionExemple">
+                <div class="box1"></div>
+                    <code>
+                        <pre>
+                            .box1 {
+                                width: 80px;
+                                height: 80px;
+                                background-color: rgb(255, 215, 222);
+                                position: relative;
+                              
+                                transition: background-color 3s, left 5s;
+                                /* transition: all 2.5s; */
+                              }
+                              
+                              .box1:hover {
+                                width: 80px;
+                                height: 80px;
+                                background-color: rgb(255, 0, 0);
+                              
+                                left: 50px;
+                            }
+                        </pre>
+                    </code>
+                <div class="box2">timing-funcion , ease-in</div>
+                    <code>
+                        <pre>
+                            .box2 {
+                                width: 80px;
+                                height: 80px;
+                                background-color: rgb(255, 215, 222);
+                                transition: all 3s <b>ease-in</b>;
+                            }
+                            
+                            .box2:hover {
+                                width: 80px;
+                                height: 80px;
+                                background-color: rgb(255, 0, 0);
+                            }
+                        </pre>
+                    </code>
+                <div class="box3">cubic-bezier</div>
+                    <code>
+                        <pre>
+                            .box3 {
+                                width: 80px;
+                                height: 80px;
+                                background-color: rgb(255, 215, 222);
+                                transition: all 6s cubic-bezier(0.3, 1.09, 0.93, 0.53);
+                            }
+                            
+                            .box3:hover {
+                                width: 80px;
+                                height: 80px;
+                                background-color: rgb(255, 0, 0);
+                            }
+                        </pre>
+                    </code>
+                <div class="box4">delay</div>
+                    <code>
+                        <pre>
+                            .box4 {
+                                width: 80px;
+                                height: 80px;
+                                background-color: rgb(255, 215, 222);
+                                transition: all 1s <b>2s</b>;
+                            }
+                            
+                            .box4:hover {
+                                width: 80px;
+                                height: 80px;
+                                background-color: rgb(255, 0, 0);
+                            }
+                        </pre>
+                    </code>
+                <div class="box5">복합</div>
+                    <code>
+                        <pre>
+                            .box5 {
+                                width: 80px;
+                                height: 80px;
+                                text-align: center;
+                                background-color: rgb(255, 215, 222);
+                                <b>transition: width 1s, height 1s, font-size 2s, background-color 5s;</b>
+                            }
+                            
+                            .box5:hover {
+                                width: 100px;
+                                height: 100px;
+                                font-size: 20px;
+                                background-color: rgb(255, 0, 0);
+                            }
+                        </pre>
+                    </code>
+            </div>
+        </div>
+        <hr>
+        <div class="animationBox">
+            <div class="animation">
+                <h2>animation</h2>
+                <p>효과를 줄 때 : 속성 값 변화 없이 효과를 주고 싶을때</p>
+                <code>
+                    <pre>
+                        @keyframe name{
+                                        from {
+                                            border:1px solid black;
+                                        }
+                                        to{
+                                            background-color: blue;
+                                        }
+                                    }
+                    </pre>
+                </code>
+                <p>from : 시작할때 대신 0% 사용가능</p>
+                <p>to : 종료할때 대신 1%~100% 사용가능</p>
+            </div>
+            <div class="animationExemple">
+                <div class="animationExemple1">
+                    애니메이션 박스 예시1
+                </div>
+                    <code>
+                        <pre>
+                            .animationExemple1 {
+                            width: 100px;
+                            height: 100px;
+                            background-color: black;
+                            color: white;
+                        
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            text-align: center;
+                        
+                            <b>
+                            animation-name: rotate;
+                            animation-duration: 3s;
+                            animation-timing-function: ease-in-out;
+                            animation-direction: alternate;
+                            /* alternate : 번갈아가면서 실행 */
+                            animation-iteration-count: 3; 
+                            </b>
+                               
+                            }
+                            
+                            @keyframes rotate {
+                                0% {
+                                background-color: black;
+                                }
+                                50% {
+                                background-color: orange;
+                                transform: rotate(10deg);
+                                }
+                                100% {
+                                background-color: rgb(118, 247, 240);
+                                border-radius: 50%;
+                                }
+                            }
+                        </pre>
+                    </code>
+                <div class="animationExemple2">
+                    애니메이션 박스 예시1
+                </div>
+                    <code>
+                        <pre>
+                            .animationExemple2 {
+                                width: 100px;
+                                height: 100px;
+                                background-color: black;
+                                color: white;
+                              
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                text-align: center;
+                              
+                                position: relative;
+                              
+                                <b>
+                                animation: move 5s alternate infinite ease-in-out;
+                                </b>
+                              }
+                              
+                              @keyframes move {
+                                0% {
+                                  background-color: orange;
+                                  left: 0px;
+                                }
+                                50% {
+                                  background-color: rgb(86, 139, 15);
+                                  transform: rotate(-10deg);
+                                  left: 30px;
+                                }
+                                100% {
+                                  background-color: rgb(1, 138, 131);
+                                  border-radius: 50%;
+                                  left: 60px;
+                                }
+                              }
+                        </pre>
+                    </code>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

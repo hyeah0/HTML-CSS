@@ -1,0 +1,166 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+.movement {
+  display: flex;
+  width: 1400px;
+  /* flex-wrap: nowrap; */
+}
+
+.TransitionBox,
+.animationBox {
+  width: 700px;
+  margin: 10px;
+}
+
+.TransitionExemple div {
+  margin: 10px;
+}
+
+.box1 {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 215, 222);
+  position: relative;
+
+  transition: background-color 3s, left 5s;
+  /* transition: all 2.5s; */
+}
+
+.box1:hover {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 0, 0);
+
+  left: 50px;
+}
+
+.box2 {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 215, 222);
+  transition: all 3s ease-in;
+}
+
+.box2:hover {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 0, 0);
+}
+
+.box3 {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 215, 222);
+  transition: all 6s cubic-bezier(0.3, 1.09, 0.93, 0.53);
+}
+
+.box3:hover {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 0, 0);
+}
+
+.box4 {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 215, 222);
+  transition: all 1s 2s;
+}
+
+.box4:hover {
+  width: 80px;
+  height: 80px;
+  background-color: rgb(255, 0, 0);
+}
+
+.box5 {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 215, 222);
+  transition: width 1s, height 1s, font-size 2s, background-color 5s;
+}
+
+.box5:hover {
+  width: 100px;
+  height: 100px;
+  font-size: 20px;
+  background-color: rgb(255, 0, 0);
+}
+
+/* =======애니메이션 예시================= */
+
+.animationExemple div {
+  margin: 10px;
+}
+
+.animationExemple1 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  animation-name: rotate;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-direction: alternate;
+  /* alternate : 번갈아가면서 실행 */
+  animation-iteration-count: 3;
+}
+
+@keyframes rotate {
+  0% {
+    background-color: black;
+  }
+  50% {
+    background-color: orange;
+    transform: rotate(10deg);
+  }
+  100% {
+    background-color: rgb(118, 247, 240);
+    border-radius: 50%;
+  }
+}
+
+.animationExemple2 {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  color: white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  position: relative;
+
+  animation: move 5s alternate infinite ease-in-out;
+}
+
+@keyframes move {
+  0% {
+    background-color: orange;
+    left: 0px;
+  }
+  50% {
+    background-color: rgb(86, 139, 15);
+    transform: rotate(-10deg);
+    left: 30px;
+  }
+  100% {
+    background-color: rgb(1, 138, 131);
+    border-radius: 50%;
+    left: 60px;
+  }
+}
