@@ -78,6 +78,8 @@
   line-height: 25px;
 }
 
+/* =================================== */
+
 .card {
   font-family: "Poppins", sans-serif;
   /* display: flex; */
@@ -92,6 +94,9 @@
   background-position: center center;
   width: 300px;
   height: 200px;
+  margin-right: 10px;
+
+  position: relative;
 }
 
 .plus-badge {
@@ -140,4 +145,61 @@
   font-size: 20px;
   /* font-weight: 400; */
   margin-bottom: 16px;
+}
+
+.property-detail {
+  font-size: 14px;
+}
+
+.sr-only {
+  position: absolute;
+  /* z-index: -100; */
+  width: 1px;
+  height: 1px;
+  text-overflow: hidden;
+  opacity: 0;
+}
+
+.property-detail dd span::after {
+  content: "·";
+  margin: 8px;
+}
+
+.property-detail dd span:last-child::after {
+  content: "";
+  margin: 0px;
+}
+
+.property-detail div:first-child {
+  margin-bottom: 8px;
+}
+
+.card {
+  display: flex;
+  width: 840px;
+}
+
+.card-content {
+  flex-grow: 1;
+}
+
+.like-button {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background-color: white;
+  border: none;
+  background-image: url(./asstesCss/cssBackgroundTestOff.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  cursor: pointer;
+
+  position: absolute;
+  top: 10px;
+  left: 10px;
+}
+
+.like-button:focus {
+  background-image: url(./asstesCss/cssBackgroundTestOn.png);
 }
