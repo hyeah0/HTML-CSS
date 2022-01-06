@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TransitionAnimationTest</title>
+    <link rel="stylesheet" href="cssTransitionAnimationTest.css">
+</head>
+<body>    
+    <div class="PseudoClass">
+        <h2>PseudoClass_가상클래스</h2>
+        <ul>
+            <li class="hover">
+                <dl>
+                    <dt>:hover</dt>
+                    <dd>커서를 두었을 때 변경</dd>
+                    <input type="button">
+                </dl>
+            </li>
+            <li class="active">
+                <dl>
+                    <dt>:active</dt>
+                    <dd>누른순간일때</dd>
+                    <input type="button">
+                </dl> 
+            </li>
+            <li class="focus">
+                <dl>
+                    <dt>:focus</dt>
+                    <dd>눌린 상태일때</dd>
+                    <input type="button">
+                </dl> 
+            </li>
+        </ul>
+    </div>
+        <br>
+    <div class="transitionTest">
+        <h2>transitionTest</h2>
+        <span class="next-move">
+            <button type="button" class="button1">Button</button>
+            <ul> 
+                <li>옆으로이동</li> 
+            </ul>
+        </span>
+        <span class="inputButtondif">
+            <input type="button" class="button2" value="Button"> 
+            </input>
+            <ul>
+                <li>
+                    <dl>
+                        <dt>
+                            input과 button의 차이
+                        </dt>
+                        <dd>
+                            input은 버튼 안에 글을 쓰려면 태그 안에 value값 작성필요
+                        </dd>
+                        <dd>
+                            input사용 : &lt;input type="button" class="button2" <b>value="Button"</b>&gt; 
+                            &lt;/input&gt;
+                        </dd>
+                        <dd>
+                            button 사용 : &lt;button type="button" class="button1"&gt;<b>button</b>&lt;/button&gt;
+                        </dd>
+                    </dl>
+                </li>
+            </ul>
+        </span>
+        <span class="useAfter">
+            <button type="button" class="button3">Button</button>
+            <ul>
+                <li>
+                마우스커서 놓았을경우 왼쪽에서 오른쪽으로 서서히 변경<br>
+                <code>
+                /* 가상요소 */ <br>
+                    .transitionTest .button3 {<br>
+                    position: relative;<br>
+                    }<br>
+                    <br>
+                    <b>.transitionTest .button3::after </b>{<br>
+                    content: "";<br>
+                    position: absolute;<br>
+                    bottom: 0px;<br>
+                    left: 0px;<br>
+                    width: 0;<br>
+                    height: 2px;<br>
+                    background-color: blue;<br>
+                    transition: all 5s;<br>
+                    }<br>
+                    <br>
+                    <b>.transitionTest .button3:hover::after {</b><br>
+                    width: 100%;<br>
+                    }<br>
+                </code>
+                 </li>
+            </ul>
+            
+        </span>
+
+    </div>
+    <div class="animationTest">
+        <h2>animationTest</h2>
+        <span class="loadingbox">
+            <h3>Loading...</h3>
+            <div class="loadingBar">
+                <span class="loadingGauge"></span>
+            </div>
+        </span>
+
+    </div>
+</body>
+</html>
