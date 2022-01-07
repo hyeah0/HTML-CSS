@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+}
+
+body {
+  margin: 10px;
+}
+
+.BoxShadowTest div {
+  margin: 20px;
+}
+
+.BoxShadowTest1 {
+  width: 80px;
+  height: 80px;
+  background-color: green;
+
+  box-shadow: 3px 10px 0px 5px black;
+}
+
+.BoxShadowTest2 {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 50px;
+  background: #ffd6d6;
+  box-shadow: inset 20px 20px 60px #9e8585, inset -20px -20px 60px #ffffff;
+}
+
+.BoxShadowTest3 {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 22px;
+  background: #ffd6d6;
+  box-shadow: 10px 10px 32px #665656, -10px -10px 32px #ffffff;
+}
+
+.BoxShadowTest4 {
+  width: 100px;
+  height: 100px;
+  border: none;
+  border-radius: 64px;
+  background: linear-gradient(225deg, #ffe5e5, #e6c1c1);
+  box-shadow: -19px 19px 39px #8c7676, 19px -19px 39px #ffffff;
+}
