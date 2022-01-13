@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.FeatureBox {
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  padding: 10px;
+}
+
+.FeatureBox img {
+  display: block;
+  width: 100px;
+  margin: 0 auto;
+  margin-bottom: 15px;
+}
+
+.FeatureBox {
+  text-align: center;
+}
+
+.FeatureBox h2 {
+  margin-bottom: 20px;
+}
