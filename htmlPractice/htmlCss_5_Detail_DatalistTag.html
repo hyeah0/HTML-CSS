@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>details/datalist 태그</title>
+    <style>
+        .detailstag,
+        .datalisttag {
+        color: black;
+        }
+
+        details[open] {
+        background-color: black;
+        color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="detailstag">
+        <h2>
+            사용 태그 details태그 <br>
+        </h2>
+        <details>
+            <summary>좋아하는 반찬은?</summary>
+            <span>고구마순 볶음</span>
+        </details>
+        <code>
+            <pre>
+            &lt;details&gt;
+            &lt;summary&gt;좋아하는 반찬은?&lt;/summary&gt;
+            &lt;span&gt;고구마순 볶음&lt;/span&gt;
+            &lt;/details&gt;
+            
+            <strong>css</strong>
+            details[open] {
+                background-color: white;
+                color: black;
+              }
+            </pre>
+        </code>
+    </div>
+    <div class="datalisttag">
+        <h2>
+            datalist 태그 = auto complete
+        </h2>
+        <label for="movie">
+            what is your favorite movie?
+        </label>
+        <input type="text" list="movie-option"/>
+        <datalist id="movie-option">
+            <option value="프리가이"></option>
+            <option value="베놈"></option>
+            <option value="겨울왕국2"></option>
+        </datalist>
+        <code>
+            <pre>
+                &lt;label for="movie"&gt;
+                    what is your favorite movie?
+                &lt;/label&gt;
+                &lt;input type="text" list="movie-option"/&gt;
+                &lt;datalist id="movie-option"&gt;
+                    &lt;option value="프리가이"&gt;&lt;/option&gt;
+                    &lt;option value="베놈"&gt;&lt;/option&gt;
+                    &lt;option value="겨울왕국2"&gt;&lt;/option&gt;
+                &lt;/datalist&gt;
+            </pre>
+        </code>
+    </div>
+</body>
+</html>
