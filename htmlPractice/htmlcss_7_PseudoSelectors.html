@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoSelectors</title>
+</head>
+<style>
+    html{
+      color: black;
+      background-color: rgba(145, 145, 145, 0.589);
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+    }
+
+    .container span:first-child{
+      background-color: yellow;
+      color: black;
+    }
+
+    .container span:nth-child(3n){
+      background-color: pink;
+    }
+    .container span:nth-child(3n+1){
+      background-color: green;
+    }
+
+    /* ==========PseudoSelectors2=============================== */
+
+    input:optional{
+      border: 2px solid wheat;
+    }
+
+    input:required{
+      border: 2px solid red;
+    }
+
+    input[type="email"]{
+      background-color: tan;
+    }
+
+    input[placeholder~="name"]{
+      background-color: pink;
+    }
+
+
+    /* ==========Combinators=============================== */
+
+    h2{
+      background-color: yellow;
+    }
+
+    .Combinators1 div > span{
+      text-decoration: underline;
+      background-color: blue;
+    }
+
+    .Combinators2 span + p{
+      text-decoration: underline;
+      background-color: blue;
+    }
+
+    .Combinators3 span ~ p{
+      text-decoration: underline;
+      background-color: blue;
+    }
+
+  </style>
+  <body>
+    <section class="PseudoSelectors">
+      <h1>Pseudo Selectors</h1>
+      <ul>
+        <li>div:first-child{}</li>
+        <li>div:last-child{}</li>
+        <li>div:nth-child(2){} == 2번째에 div에 스타일</li>
+        <li>div:nth-child(even){} == 짝수번째 div에 스타일 적용</li>
+        <li>div:nth-child(2n){} == 짝수번째 div에 스타일 적용</li>
+        <li>div:nth-child(odd){} == 홀수번째 div에 스타일 적용</li>
+        <li>div:nth-child(2n+1){} == 짝수번째 div에 스타일 적용</li>
+        <li>div:nth-child(3n){} == 3의배수 div에 스타일 적용</li>
+        <li>div:nth-child(3n+1){} == 첫번째적용, 첫번째 제외 3번째</li>
+      </ul>
+      <section class="container">
+        <span>first-child,3n+1</span>
+        <span>hello!</span>
+        <span>3n</span>
+        <span>3n+1</span>
+        <span>hello</span>
+        <span>3n</span>
+        <span>3n+1</span>
+        <span>hello!</span>
+        <span>3n</span>
+      </section>
+    </section>
+    <hr>
+    <!-- ============================================================ -->
+    </br>
+    <section class="PseudoSelectors2">
+      <p>.Combinators3 span ~ p{}</p>
+      
+      <form action="">
+        <input type="text" placeholder="userid"/>
+        <input type="email" required placeholder="email"/>
+      </form>
+      <p>input required 부분 진한 빨강색 테두리</p>
+      <code>
+        <pre>
+          input:required{
+            border: 2px solid red;
+          }
+        </pre>
+      </code>
+      <p> input 타입 email칸에 tan 색상 코드</p>
+      <code>
+        <pre>
+        input[type="email"]{
+          background-color: tan;
+        }
+        </pre>
+      </code>
+    <hr>
+    <!-- ============================================================ -->
+    </br>
+      <form action="">
+        <input type="password" placeholder="password"/>
+        <input type="text"  placeholder="first name"/>
+        <input type="text"  placeholder="last name"/>
+      </form>
+      <code>
+        <pre>
+          input[placeholder<strong> ~= </strong>"name"]{
+            background-color: pink;
+          }
+        </pre>
+      </code>
+      <p>
+        input placeholder 에 name이 포함된 input에 스타일 적용
+        <strong>'~='</strong>
+      </p>
+    </section>
+    <!-- ============================================================ -->
+    <hr>
+    <hr>
+
+    <h1>Combinators</h1>
+    <section class="Combinators1">
+        <h2>case1 - ">"</h2>
+        <p>
+          .Combinators1 div > span{} == div 바로 아래 span에 스타일적용
+          </br>
+          부모와 바로 밑 자식
+        </p>
+        <div>
+          <span>hi</span>
+          <p>abcdefg<span>hi</span></p>
+        </div>
+    </section>
+    <section class="Combinators2">
+      <h2>case2 - "+"</h2>
+      <p>
+        .Combinators2 span + p{} == span 바로 아래 p에 스타일적용
+        </br>
+        형제와 바로 뒤에 오는 형제의 관계
+      </p>
+      <div>
+        <span>hi</span>
+        <p>abcdefg<span>hi</span></p>
+        <p>jklmnop</p>
+      </div>
+  </section>
+  <section class="Combinators3">
+    <h2>case3 - "~"</h2>
+    <p>
+      .Combinators3 span ~ p{} == span 바로 아래 p가 없을때 p에 스타일적용 필요시
+      </br>
+      형제와 형제 관계 , 형제 뒤에 형제가 올 필요없다
+    </p>
+    <div>
+      <span>hi</span>
+      <div>소떡</div>
+      <p>abcdefg<span>hi</span></p>
+      <p>jklmnop</p>
+    </div>
+</section>
+  </body>
+</html>
