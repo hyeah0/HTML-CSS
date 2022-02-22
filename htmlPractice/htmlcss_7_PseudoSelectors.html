@@ -169,7 +169,7 @@
         <p>abcdefg<span>hi</span></p>
         <p>jklmnop</p>
       </div>
-  </section>
+   </section>
   <section class="Combinators3">
     <h2>case3 - "~"</h2>
     <p>
@@ -183,6 +183,17 @@
       <p>abcdefg<span>hi</span></p>
       <p>jklmnop</p>
     </div>
-</section>
+  </section>
+  <section>
+    <pre>
+      #attribute
+      input[type="text"]{} type="text"인 input만을 선택
+      input[type~="text"]{} "text"를 포함하는 input선택
+      input[type$="text"]{} 끝에 "text"가 오는 input 선택
+      input[type^="text"]{} 앞에 "text"가 오는 input 선택
+    </pre>
+  </section>
+
+
   </body>
 </html>

@@ -1,0 +1,9 @@
+:root {
+  --main-color: rgb(16, 115, 180);
+  --default-border: 2px solid var(var(--main-color));
+}
+
+p:nth-child(3) {
+  background-color: var(--main-color);
+  border: var(--default-border);
+}

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PseudoSelectors_States</title>
+    <link rel="stylesheet" href="htmlcss_8_PseudoSelectors_States.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#states">states</a></li>
+                <li><a href="#PseudoSelectors">PseudoSelectors</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="states">
+            <h1>states</h1>
+            <h2> hover, Active, focus, focus-within, visited</h2>
+            <dl class="hover">
+                <dt>:hover</dt>
+                <dd>마우스가 해당 요소 위에 있을때</dd>
+                <dd><button>:hover</button></dd>
+                <pre>
+                    .hover <strong>button:hover</strong> {
+                        background-color: pink;
+                        }
+                </pre>
+            </dl>
+            <dl class="active">
+                <dt>:active</dt>
+                <dd>해당 요소를 클릭했을때</dd>
+                <dd><button>:Active</button></dd>
+                <pre>
+                    .active <strong>button:active</strong> {
+                        background-color: yellow;
+                      }
+                </pre>
+            </dl>
+            <dl class="focus">
+                <dt>:focus</dt>
+                <dd>요소가 선택되었을때</dd>
+                <dd><button>:focus</button></dd>
+                <pre>
+                    .focus <strong>button:focus</strong> {
+                        background-color: green;
+                      }
+                </pre>
+            </dl>
+            <dl class="focus_within">
+                <dt>:focus-within</dt>
+                <dd>부모요소에 적용하며, 자식요소 중 하나가 선택되었을때</dd>
+                <dd>
+                    <form>
+                        <input type="text"/>
+                        <input type="text"/>
+                        <input type="text"/>
+                    </form>
+                </dd>
+                <pre>
+                    <strong>html</strong>
+                    &lt;form&gt;
+                        &lt;input type="text"/&gt;
+                        &lt;input type="text"/&gt;
+                        &lt;input type="text"/&gt;
+                    &lt;/form&gt;
+        
+                    <strong>css</strong>
+                    .focus_within <strong>form:focus-within</strong> {
+                        background-color: violet;
+                      }
+                </pre>
+            </dl>
+            <dl class="visited">
+                <dt>:visited</dt>
+                <dd>링크가 방문한 사이트일 경우</dd>
+                <dd><a href="https://www.netflix.com/browse" target="_blank">넷플릭스</a></dd>
+                <pre>
+                    .visited <strong>a:visited </strong>{
+                        color: tomato;
+                      }
+                </pre>
+            </dl>
+            <dl class="mixed">
+                <dt>:복합으로 사용</dt>
+                <dd>
+                    <form>
+                        <input type="text"/>
+                        <input type="text"/>
+                        <input type="text"/>
+                    </form>
+                </dd>
+                <pre>
+                    <strong>html</strong>
+                    &lt;form&gt;
+                        &lt;input type="text"/&gt;
+                        &lt;input type="text"/&gt;
+                        &lt;input type="text"/&gt;
+                    &lt;/form&gt;
+        
+                    <strong>css</strong>
+                    .mixed <strong>form:hover input:nth-child(2)</strong> {
+                        background-color: orangered;
+                      }
+                    form에 마우스 커서가 올라가있을때 2번째 input에 style 적용
+        
+                    .mixed <strong>form:hover input:nth-child(3):focus</strong> {
+                        background-color: pink;
+                      }
+                    form에 마우스 커서가 올라가 있고, 3번째 input이 focus 되었을때 style 적용
+                </pre>
+            </dl>
+        </section>
+        <section id="PseudoSelectors">
+            <h1>PseudoSelectors</h1>
+            <h2>
+                ::placeholder ,
+                ::selection ,
+                ::first-letter,
+                ::first-line
+            </h2>
+            <dl class="placeholder">
+                <dt>::placeholder</dt>
+                <dd>input에 설정된 placeholder만 꾸밀때</dd>
+                <dd>
+                    <input type="text" placeholder="placeholder="/>
+                    <input type="text" />
+                </dd>
+                <pre>
+                    .placeholder <strong>input::placeholder</strong> {
+                        color: orangered;
+                      }
+                </pre>
+            </dl>
+            <dl class="selection">
+                <dt>::selection</dt>
+                <dd>드래그시</dd>
+                <dd>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </dd>
+                <pre>
+                    .selection dd <strong>p::selection</strong> {
+                        background-color: pink;
+                      }
+                </pre>
+            </dl>
+            <dl class="first-letter">
+                <dt>::first-letter, ::first-line</dt>
+                <dd>앞 글자, 첫줄</dd>
+                <dd>
+                    <p>
+                        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    </p>
+                </dd>
+                <pre>
+                    .first-letter dd <strong>p::first-letter</strong> {
+                        background-color: blue;
+                        font-size: 2em;
+                      }
+                </pre>
+            </dl>
+
+        </section>
+    </main>
+    
+   
+
+
+</body>
+</html>
