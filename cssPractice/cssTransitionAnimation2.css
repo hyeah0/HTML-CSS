@@ -6,13 +6,14 @@ html {
   justify-content: center;
   align-items: center;
 }
-.round_circle,
-.moving_rectangle {
+
+section {
   width: 80px;
   display: flex;
   justify-content: space-evenly;
   margin: 80px 0px;
 }
+
 .round_circle div {
   width: 8px;
   height: 8px;
@@ -20,26 +21,81 @@ html {
   background-color: white;
 }
 
-.circle2 {
-  /* animation: round 5s ease-in-out;
-  animation-iteration-count: infinite; */
-  animation: round 2s ease-in-out both infinite;
+.round_circle {
+  animation: round 2s infinite;
 }
 
 @keyframes round {
   0% {
-    /* transform: rotate(0deg); */
-    transform: rotate(0deg) translateY(-25px) translateX(-25px);
-    /* transform-origin: top;
-    transform-origin: top; */
+    transform: rotate(0deg);
   }
   100% {
-    /* transform: rotate(360deg); */
-    transform: rotate(180deg) translateY(50px) translateX(50px);
-    /* transform-origin: top;
-    transform-origin: top; */
+    transform: rotate(180deg);
   }
 }
+
+.rectangle {
+  width: 8px;
+  height: 50px;
+  margin: 0px;
+  background-color: white;
+  animation: big 2s infinite;
+}
+
+@keyframes big {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: scaleY(2);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.rectangle:nth-child(2) {
+  animation-delay: 0.1s;
+}
+.rectangle:nth-child(3) {
+  animation-delay: 0.2s;
+}
+.rectangle:nth-child(4) {
+  animation-delay: 0.3s;
+}
+.rectangle:nth-child(5) {
+  animation-delay: 0.4s;
+}
+
+/* .round_circle,
+.moving_rectangle {
+  width: 80px;
+  height: 80px;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px 0px;
+} */
+
+/* .circle2 {
+  animation: round 5s ease-in-out;
+  animation-iteration-count: infinite;
+  animation: round 2s ease-in-out both infinite;
+} */
+
+/* @keyframes round {
+  0% {
+    transform: rotate(0deg);
+    transform: rotate(0deg) translateY(-25px) translateX(-25px);
+    transform-origin: top;
+    transform-origin: top;
+  }
+  100% {
+    transform: rotate(360deg);
+    transform: rotate(180deg) translateY(50px) translateX(50px);
+    transform-origin: top;
+    transform-origin: top;
+  }
+} */
 
 /* @keyframes round {
   0% {
@@ -53,27 +109,11 @@ html {
   }
 } */
 
-.rectangle {
-  width: 8px;
-  height: 35px;
-  margin: 0px;
-  background-color: white;
-  /* animation: big 2s ease-in-out both infinite; */
-}
-
-.rectanglebox::after {
-  content: "";
-  height: 0px;
-  margin: 0px;
-  background-color: rgb(163, 13, 13);
-  animation: big 2s ease-in-out both infinite;
-}
-
-@keyframes big {
+/* @keyframes big {
   0% {
     height: 50px;
   }
   100% {
     height: 65px;
   }
-}
+} */

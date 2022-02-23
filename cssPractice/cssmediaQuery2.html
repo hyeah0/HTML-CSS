@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>css_mediaQuery</title>
+    <link rel="stylesheet" href="cssmediaQuery2.css">
+</head>
+<body>
+    <h1>@media 반응형 웹</h1>
+    <div></div>
+    <code>
+        <pre>
+        div {
+            width: 200px;
+            height: 200px;
+            border: 2px solid black;
+          }
+          
+          @media screen and (max-width: 600px) {
+            /* max-width 최대 넓이 */
+            /* 가로가 600px 보다 작으면 tomato색깔 적용 */
+          
+            div {
+              background-color: tomato;
+            }
+          }
+          
+          @media screen and (min-width: 800px) {
+            /* min-widt 최소 넓이 */
+            /* 가로가 800px 보다 크면 teal색깔 적용 */
+          
+            div {
+              background-color: teal;
+            }
+          }
+          
+          @media screen and (min-width: 700px) and (max-width: 799px) {
+            /* min-widt 최소 넓이 */
+            /* 가로가 800px 보다 크면 teal색깔 적용 */
+          
+            div {
+              background-color: pink;
+            }
+
+            @media screen and (orientation: landscape) {
+                /* orientation: landscape 가로 모드일때*/
+              
+                div {
+                  background-color: orange;
+                }
+              }
+        </pre>
+    </code>
+</body>
+</html>

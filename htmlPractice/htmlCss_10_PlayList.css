@@ -1,0 +1,138 @@
+html {
+  width: 100%;
+  height: 100vh;
+  border: 5px solid teal;
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 40px 20px 20px 20px;
+  text-align: center;
+
+  position: relative;
+}
+
+.header_items {
+  height: 30px;
+  padding: 0px;
+  margin: 0px;
+  font-size: 1.2em;
+  font-weight: bolder;
+}
+
+header button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.playing {
+  display: flex;
+}
+.playing img {
+  width: 110px;
+  height: 110px;
+  background-color: yellow;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 20px;
+}
+
+.playing_music,
+.music {
+  display: flex;
+  flex-direction: column;
+}
+
+.playing_music h1 {
+  font-size: 2em;
+  margin: 15px 0px 0px 0px;
+}
+
+.playing_music p {
+  font-weight: bolder;
+  margin: 5px 0px;
+}
+
+.playbutton {
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+}
+
+.playbutton button {
+  padding: 10px;
+  border: 2px solid black;
+  font-weight: bolder;
+  box-shadow: 0px 5px 0px 0px black;
+}
+
+.playbutton button:first-child {
+  width: 160px;
+  height: 50px;
+  border-radius: 10px;
+  /* position: absolute;
+  left: 20px; */
+}
+
+.playbutton button:first-child::before {
+  content: "▷";
+}
+
+.playbutton button:nth-child(2),
+.playbutton button:nth-child(3) {
+  width: 50px;
+  border-radius: 50%;
+}
+
+.playlist {
+  margin: 20px;
+}
+
+article {
+  display: flex;
+  align-items: center;
+  margin: 40px 0px 20px 0px;
+}
+
+.box {
+  width: 40px;
+  height: 40px;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+.music p {
+  margin: 0px 5px;
+}
+
+.music p:first-child {
+  font-size: large;
+  font-weight: bolder;
+}
+
+.music p:last-child {
+  font-size: small;
+  font-weight: bolder;
+  color: rgb(78, 78, 78);
+}
+
+.box1 {
+  background-color: tomato;
+}
+.box2 {
+  background-color: rgb(253, 82, 196);
+}
+.box3 {
+  background-color: blue;
+}
+.box4 {
+  background-color: teal;
+}
