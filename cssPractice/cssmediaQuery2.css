@@ -32,8 +32,7 @@ div {
 }
 
 @media screen and (orientation: landscape) {
-  /* min-widt 최소 넓이 */
-  /* 가로가 800px 보다 크면 teal색깔 적용 */
+  /* orientation: landscape 가로 모드일때*/
 
   div {
     background-color: orange;
