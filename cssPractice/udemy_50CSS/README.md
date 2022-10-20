@@ -6,4 +6,4 @@ udemy 강의 50가지 html,css,js Project
 <br>
 - 데이터 : movie api로 데이터 가져오기
 - css : hover시 영화 설명 올라오게
-[코드](https://github.com/hyeah0/HTML-CSS/tree/master/cssPractice/udemy_50CSS/code/17_movieUi_hover_api)
+- [ 코드 ](https://github.com/hyeah0/HTML-CSS/blob/master/cssPractice/udemy_50CSS/code/17_movieUi_hover_api/movie.html)
