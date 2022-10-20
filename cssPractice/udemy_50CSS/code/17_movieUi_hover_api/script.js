@@ -1,10 +1,11 @@
 // api link >>> https://www.themoviedb.org/documentation/api
-// 1. API_URL  https://[apidomain]/[apiversion]/[apiresource]&api_key=[3fd2be6f0c70a2a598f084ddfb75487c]&page=1
+// 1. API_URL  https://[apidomain]/[apiversion]/[apiresource]&api_key=[apikey]&page=1
 // 2. IMG_PATH https://image.tmdb.org/t/p/w[가로크기]
+// 3. SEARCH_API https://api.themoviedb.org/3/search/movie?api_key=[apikey]&query='
 
-const API_URL = "https://api.themoviedb.org/3/discover/movie?sort_by=popluarity.desc&api_key=3fd2be6f0c70a2a598f084ddfb75487c&page=1"
+const API_URL = "https://api.themoviedb.org/3/discover/movie?sort_by=popluarity.desc&api_key=[apikey]c&page=1"
 const IMG_PATH = "https://image.tmdb.org/t/p/w1280"
-const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=3fd2be6f0c70a2a598f084ddfb75487c&query='"
+const SEARCH_API = "https://api.themoviedb.org/3/search/movie?api_key=[apikey]&query='"
 
 const form = document.querySelector("#form")
 const search = document.querySelector("#search")
